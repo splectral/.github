@@ -1,22 +1,25 @@
 # SPLectral
 
-Components for SPLectral, the platform for seeing and working with running
-systems in the browser. The components work in SPLectral's own abstract world
-(hosts, nodes, resources named by URI, and their activity) and know nothing of
+Interaction: the packages whose concern is how people and other systems
+work with a running system, first of all the UI in a browser. SPLectral is
+a platform for components; each component is an app it installs and
+serves. The components work in SPLectral's own abstract world (hosts,
+nodes, resources named by URI, and their activity) and know nothing of
 what runs underneath.
 
-Its first step on the current platform is one page: an install shown as a
-tree, its commands appearing as they complete. It is a package in
-**[HAICCing](https://github.com/haiccing)**, `base-package-splectral`, on
-the server `splectral-server` in
+The platform itself is a package in **[HAICCing](https://github.com/haiccing)**,
+`base-package-splectral`, on the server `splectral-server` in
 [pear-full-square](https://github.com/pear-full-square), where SPLectral's
-engine lives. The repositories here, a map view and the two demos' scenarios,
-are of the earlier platform and rest; the components come back as the
-platform needs them.
+engine lives. It shows an install as a tree, its commands appearing as
+they complete. Its first component, the info viewer (the platform's
+documentation read in a browser as the command line reads it), is a proof
+of concept and comes here when it is published. The repositories here now,
+a map view and the two demos' scenarios, are of the earlier platform and
+rest.
 
-## The five organisations
+## The seven organisations
 
-SPLectrum's engineering is spread over five GitHub organisations:
+SPLectrum's engineering is spread over seven GitHub organisations:
 
 - **[splectrum](https://github.com/splectrum)**: where SPLectrum, the
   philosophy project, lives, and where its engineering is planned.
@@ -26,7 +29,11 @@ SPLectrum's engineering is spread over five GitHub organisations:
   all of the platform's code, one module a repository.
 - **[HAICCing](https://github.com/haiccing)**: the packages made from those
   modules, and the `haicc` command: what you can run. Start here.
-- **[SPLectral](https://github.com/splectral)** (this one): components for seeing and
-  working with running systems in the browser.
+- **[myctral](https://github.com/myctral)**: mycelium's data
+  repositories: state.
+- **[myctrans](https://github.com/myctrans)**: data transformation:
+  process.
+- **[SPLectral](https://github.com/splectral)** (this one): interaction, first of
+  all the UI.
 
 Part of the engineering of [SPLectrum](https://splectrum.world).
